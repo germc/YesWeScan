@@ -12,11 +12,9 @@ If you've ever had to generate a barcode or read one with software, you may have
 
 There are limitations to each of these. So I was excited when Apple announced a "barcode recognition" API, and discussed it in more detail in Session 610 ("What's New in Camera Capture"). AVFoundation adds support for the 10 or so formats supported by Passbook (note the "Scan Code" feature added to that app). 
 
-The sample app should be installed on two devices, and demonstrates creation of a QR code in one tab, and the successful reading of that code in the other. The project is called "Yes We Scan."
-
-## Technical Details
-
 The project consists of a UITabBarController with two tabs: one to create QR codes (CreateViewController), and one to read them (ReadViewController). The former presents a UISearchBar that allows you to enter the encoded string; the latter scans for available codes. Tapping the screen while a code is highlighted will present a UIAlertView with the decoded text.
+
+For best results, the sample app should be installed & launched on two devices running iOS 7. If only one device is available, run the "Create" tab in the iOS Simulator and the "Read" tab on a device.
 
 ## References
 
