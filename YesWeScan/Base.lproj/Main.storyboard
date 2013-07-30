@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+    <dependencies>
+        <development version="5000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="1HK-TD-EAe">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ene-cP-HSO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="l7S-oi-LJj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fAB-qh-r9x">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="rootViewController" id="YRi-Yh-JeK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tW-cJ-tdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="-182"/>
+        </scene>
+        <!--Create View Controller - Generate a QR Code-->
+        <scene sceneID="W3I-pn-N6e">
+            <objects>
+                <viewController id="CZ4-MO-1fc" customClass="CreateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bMm-6g-lwZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oh0-f4-Qie"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="352" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Enter a URL to encode" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ssi-6s-lCG">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <connections>
+                                    <outlet property="delegate" destination="CZ4-MO-1fc" id="RAe-Fj-yXm"/>
+                                </connections>
+                            </searchBar>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nAg-Ud-fqu">
+                                <rect key="frame" x="60" y="129" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="sOI-T2-Fak"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nAg-Ud-fqu" firstAttribute="top" secondItem="Ssi-6s-lCG" secondAttribute="bottom" constant="21" id="0H8-Bh-14R"/>
+                            <constraint firstItem="nAg-Ud-fqu" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="60" id="A2G-bw-UDf"/>
+                            <constraint firstItem="nAg-Ud-fqu" firstAttribute="top" secondItem="2VE-Yg-loa" secondAttribute="top" constant="129" id="QxW-OK-MUb"/>
+                            <constraint firstItem="Ssi-6s-lCG" firstAttribute="centerX" secondItem="nAg-Ud-fqu" secondAttribute="centerX" id="TRO-vf-UDR"/>
+                            <constraint firstItem="nAg-Ud-fqu" firstAttribute="centerX" secondItem="2VE-Yg-loa" secondAttribute="centerX" id="dPc-jy-0H8"/>
+                            <constraint firstItem="Ssi-6s-lCG" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="gAO-93-4LZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Create" image="first" id="u1e-5L-l1D"/>
+                    <navigationItem key="navigationItem" title="Generate a QR Code" id="KHz-FG-IJr"/>
+                    <connections>
+                        <outlet property="qrCodeView" destination="nAg-Ud-fqu" id="oLs-YD-ZZN"/>
+                        <outlet property="searchBar" destination="Ssi-6s-lCG" id="UWI-I2-QGb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="-182"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="f18-99-dzh">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="bFF-4S-moT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5fa-Hw-cjB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e7z-Qy-EnP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="rootViewController" id="6R7-s0-N39"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dtf-uE-UDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="587"/>
+        </scene>
+        <!--Read View Controller - Scan a Code-->
+        <scene sceneID="ot8-2e-RuS">
+            <objects>
+                <viewController id="QUy-BD-bpt" customClass="ReadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UNc-hL-YGu"/>
+                        <viewControllerLayoutGuide type="bottom" id="gAt-uf-Eqd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Read" image="second" id="Z7h-1E-pvt"/>
+                    <navigationItem key="navigationItem" title="Scan a Code" id="pzb-UF-sZZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="587"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vex-rW-GRa">
+            <objects>
+                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ene-cP-HSO" kind="relationship" relationship="viewControllers" id="ynY-mL-nbF"/>
+                        <segue destination="bFF-4S-moT" kind="relationship" relationship="viewControllers" id="mm5-1w-7eu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
