@@ -69,7 +69,11 @@
     [self.highlightTimer invalidate];
     self.highlightTimer = nil;
     
+    self.previewLayer.sublayers = nil;
     self.previewLayer = nil;
+    
+    self.barcodeHighlightView.layer.sublayers = nil;
+    [self.barcodeHighlightView removeFromSuperview];
     self.barcodeHighlightView = nil;
 }
 

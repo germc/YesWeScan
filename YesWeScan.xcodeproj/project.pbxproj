@@ -63,16 +63,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16D64DCF17A68BA0000923B5 /* Resources */ = {
+		167CCB4217E92220003D273C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				16FAD5981792FBA2009E1F1B /* Main.storyboard */,
-				16FAD5A11792FBA2009E1F1B /* Images.xcassets */,
+				16D64DCD17A68B8E000923B5 /* CodeScanner.h */,
+				16D64DCE17A68B8E000923B5 /* CodeScanner.m */,
 			);
-			name = Resources;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		16D64DD017A68BAC000923B5 /* View Controllers */ = {
+		167CCB4317E92225003D273C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				16FAD59B1792FBA2009E1F1B /* CreateViewController.h */,
@@ -83,12 +83,20 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		16D64DCF17A68BA0000923B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16FAD5981792FBA2009E1F1B /* Main.storyboard */,
+				16FAD5A11792FBA2009E1F1B /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		16D64DD117A68BB6000923B5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				16D64DCD17A68B8E000923B5 /* CodeScanner.h */,
-				16D64DCE17A68B8E000923B5 /* CodeScanner.m */,
-				16D64DD017A68BAC000923B5 /* View Controllers */,
+				167CCB4317E92225003D273C /* View Controllers */,
+				167CCB4217E92220003D273C /* Model */,
 				16FAD5951792FBA2009E1F1B /* AppDelegate.h */,
 				16FAD5961792FBA2009E1F1B /* AppDelegate.m */,
 			);
